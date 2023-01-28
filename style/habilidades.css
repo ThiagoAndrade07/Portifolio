@@ -1,0 +1,33 @@
+/* Habilidades */
+
+.div-habilidades {
+    display: flex;
+    justify-content: center;
+}
+
+.ulista-habilidades {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    text-align: center;
+}
+
+.logo-habilidades {
+    width: 100px;
+}
+
+.animacao-habilidades {
+    transition: transform 1.5s;
+
+}
+
+.animacao-habilidades:hover {
+    transform: scale(1.10,1.10);
+    transform: rotateY(360deg);
+}
+
+.texto-habilidades {
+    font-size: 1.3em;
+    padding-top: 10px;
+    text-transform: uppercase;
+}

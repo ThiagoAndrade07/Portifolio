@@ -1,0 +1,435 @@
+@import url(../style/header.css);
+@import url(../style/inicio.css);
+@import url(../style/sobremim.css);
+@import url(../style/projetos.css);
+@import url(../style/habilidades.css);
+@import url(../style/trabalhar.css);
+@import url(../style/footer.css);
+
+:root {
+    --gradient-colorido: linear-gradient(
+        to right,
+        rgb(149, 114, 252),
+        rgb(67, 231, 173),
+        rgb(226, 212, 92)
+    );
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(
+    90deg,
+    hsl(240, 21%, 12%) 0%,
+    hsl(240deg 19% 12%) 9%,
+    hsl(239deg 18% 13%) 18%,
+    hsl(239deg 18% 13%) 27%,
+    hsl(238deg 17% 14%) 36%,
+    hsl(238deg 16% 15%) 45%,
+    hsl(237deg 16% 15%) 55%,
+    hsl(237deg 15% 16%) 64%,
+    hsl(236deg 15% 16%) 73%,
+    hsl(236deg 14% 17%) 82%,
+    hsl(235deg 14% 17%) 91%,
+    hsl(235deg 13% 18%) 100%
+    );
+    color: #ffffff;
+}
+
+h2 {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 0.3em;
+    margin-bottom: 1.5em;
+}
+
+@media screen and (min-width:720px) {
+
+    /* Projetos */
+    .projetos {
+        height: 400px;
+    }
+
+    .container-box-box {
+        height: 250px;
+        display: flex;
+        align-items: center;
+    }
+
+    .box-box {
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+    }
+}
+
+@media screen and (min-width:950px) {
+
+    h2 {
+        font-size: 3em;
+    }
+
+    /* Cabeçalho */
+
+    .logo-header:hover {
+        transform: scale(1.1);
+    }
+
+    .container-cabecalho {
+        width: 900px;
+        margin: 0 auto;
+        flex-direction: row-reverse;
+    }
+
+    .menu-cabecalho-hamburguer,
+    #menu,
+    .lista-menu-titulo {
+        display: none;
+    }
+
+    .lista-menu-item {
+        background: none;
+        backdrop-filter: none;
+    }
+
+    .lista-menu {
+        display: flex;
+        position: static;
+        width: fit-content;
+    }
+
+    .lista-menu-item {
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .lista-menu-item::after {
+        content: " ";
+        width: 0%;
+        height: 2px;
+        background-color: #ffffff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.5s ease-in-out;
+    }
+
+    .lista-menu-item:hover::after {
+        width: 100%;
+    }
+
+    /* Inicio */
+
+    .inicio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: #000000;
+        margin-bottom: 50px;
+    }
+
+    .video {
+        display: block;
+        position: absolute;
+        width: 1000px;
+        z-index: 1;
+    }
+
+    .container {
+        display: flex;
+        z-index: 2;
+    }
+
+    .container-texto-link {
+        width: 100%;
+        margin-right: 100px;
+        margin-bottom: 50px;
+        text-align: start;
+    }
+
+    .texto-apresentacao {
+        font-size: 1.8em;
+        margin-top: 2em;
+        margin-bottom: 2.5em;
+    }
+
+    .thiago {
+        font-size: 1.8em;
+    }
+
+    .linkedin1 {
+        padding: 10px 60px;
+        font-size: 2.5em;
+    }
+
+    .foto1 {
+        width: 270px;
+    }
+
+    /* Sobre mim */
+
+    .sobre-mim {
+        height: 700px;
+    }
+
+    .texto-foto-sobre-mim {
+        height: 70%;
+    }
+
+    .texto2 {
+        font-size: 1.5em;
+    }
+
+    .foto2 {
+        width: 250px;
+        margin-bottom: 2.5em;
+    }
+
+    /* Projetos */
+
+    .projetos {
+        height: 700px;
+    }
+
+    .container-box-box {
+        height: 70%;
+    }
+
+    .box-box {
+        column-gap: 90px;
+    }
+
+    .box {
+        width: 210px;
+        height: 210px;
+    }
+
+    /* Habilidades */
+
+    .habilidades {
+        height: 700px;
+    }
+
+    .div-habilidades {
+        height: 70%;
+        align-items: center;
+    }
+
+    .ulista-habilidades {
+        display: flex;
+        flex-direction: row;
+        column-gap: 140px;
+    }
+
+    .ulista-habilidades {
+        column-gap: 60px;
+    }
+
+    .logo-habilidades {
+        width: 180px;
+    }
+
+    /* Trabalhar */
+
+    .trabalhar {
+        height: 260px;
+    }
+    .trabalhar-juntos {
+        font-size: 2em;
+    }
+
+    .together {
+        font-size: 3em;
+    }
+    /* Rodape */
+
+    .rodape {
+        height: 500px;
+    }
+
+    .display-listas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        flex-direction: row;
+    }
+
+    .github-icone {
+        margin-left: 100px;
+    }
+
+    .linkedin-icone {
+        margin: 0 130px;
+    }
+
+    .li-curriculo {
+        margin-top: 1em;
+    }
+
+    /* Rodape */
+
+    .rodape {
+        height: 600px;
+    }
+}
+
+@media screen and (min-width:1350px) {
+    /* Cabeçalho */
+
+    .cabecalho {
+        height: 5em;
+    }
+
+    .lista-menu-link {
+        font-size: 1.5em;
+    }
+    .logo-header {
+        width: 150px;
+    }
+
+    /* Inicio */
+
+    .inicio {
+        height: 800px;
+    }
+    .texto-apresentacao {
+        font-size: 2em;
+    }
+
+    .linkedin1 {
+        padding: 20px 100px;
+    }
+    .foto1 {
+        width: 300px;
+        height: 430px;
+    }
+    
+    /* Sobre mim */
+
+    .texto-foto-sobre-mim {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .texto2 {
+        line-height:1.5em;
+        
+    }
+
+    .foto2 {
+        height: 250px;
+        margin-bottom: 0;
+        margin-right: 60px;
+    }
+    
+    /* Projetos */
+
+    .box .em-breve {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width:1700px) {
+
+    h2 {
+        font-size: 4.5em;
+    }
+
+    /* Cabeçalho */
+
+    .container-cabecalho {
+        width: 1300px;
+    }
+
+    .lista-menu-link {
+        font-size: 2em;
+    }
+
+    .logo-header:hover {
+        transform: scale(1.1);
+    }
+
+    /* Inicio */
+
+    .inicio {
+        height: 900px;
+    }
+    .texto-apresentacao {
+        font-size: 3em;
+    }
+
+    .linkedin1 {
+        font-size: 3em;
+        padding: 30px 120px;
+    }
+    .foto1 {
+        width: 405px;
+        height: 500px;
+        margin-top: 80px;
+    }
+
+    /* Projetos  */
+
+    .box-box {
+        column-gap: 120px;
+    }
+
+    .box {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* Habilidades  */
+
+    .ulista-habilidades {
+        column-gap: 180px;
+    }
+
+    .logo-habilidades {
+        width: 250px;
+    }
+
+    .texto-habilidades {
+        font-size: 3em;
+    }
+
+    /* trabalhar */
+
+    .trabalhar {
+        height: 400px;
+    }
+    .trabalhar-juntos {
+        font-size: 3em;
+    }
+
+    .together {
+        font-size: 4em;
+    }
+
+    /* Rodape  */
+
+    .rodape {
+        height: 840px;
+    }
+
+    .logoth {
+        width: 300px;
+    }
+
+    .icone {
+        width: 100px;
+    }
+
+    .curriculo1 {
+        font-size: 2em;
+    }
+
+    .div-direitos {
+        font-size: 1.7em;
+    }
+}

@@ -1,0 +1,32 @@
+/* Sobre mim */
+
+.sobre-mim {
+    height: 500px;
+}
+
+.texto-foto-sobre-mim {
+    margin: 0 auto;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto2 {
+    text-align: justify;
+    border-right: 2px solid green;
+    padding-right: 0.7em;
+}
+
+.foto2 {
+    width: 150px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 1.3em;
+    opacity: 90%;
+}
+
+.foto2:hover {
+    transform: scale(1.10,1.10);
+    opacity: 100%;
+}

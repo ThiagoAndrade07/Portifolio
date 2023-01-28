@@ -1,0 +1,39 @@
+/* Trabalhar juntos */
+
+.trabalhar {
+    margin-top: 3em;
+    height: 200px;
+    border-top: 2px solid #ffffff;
+}
+
+.trabalhar-juntos {
+    width: fit-content;
+    margin: 2em auto;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.together {
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    background: var(--gradient-colorido);
+    padding-bottom: 1em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 500ms;
+}
+
+.together:hover {
+    transform: scale(1.25);
+}
+
+.work {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-seta {
+    display: none;
+}

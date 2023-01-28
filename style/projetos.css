@@ -1,0 +1,60 @@
+/* Projetos */
+
+.projetos {
+    width: fit-content;
+    margin: 0 auto;
+    height: 650px;
+}
+
+.box-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+.box {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .4);
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 140%;
+    background: linear-gradient(#0196fa, #00f715);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }  
+}
+
+.box::after {
+        content: '';
+        position: absolute;
+        inset: 5px;
+        background: rgb(43, 44, 54);
+        border-radius: 20px;     
+}
+
+.box .em-breve {
+    position: relative;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.5em;
+    z-index: 1;
+}
