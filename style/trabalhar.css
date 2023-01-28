@@ -21,6 +21,7 @@
     background: var(--gradient-colorido);
     padding-bottom: 1em;
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 500ms;
 }
